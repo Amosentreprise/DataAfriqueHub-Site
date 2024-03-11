@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Evènements de Data Afrique Hub</title>
+    <meta
+      name="description"
+      content="Data Afrique Hub - La communauté passionnée qui se consacre à libérer le potentiel de la data science en Afique."
+    />
+    <link rel="shortcut icon" href="./assets/logo_DataAfriqueHub.ico" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-primary min-h-screen w-full font-poppins text-white relative">
+    <header class="bg-primary w-full overflow-hidden border-b border-white">
+      <nav
+        id="nav-bar"
+        class="max-w-7xl mx-auto font-poppins py-1 flex items-center justify-between"
+      >
+        <img
+          src="./assets/logo_DataAfriqueHub.png"
+          alt="Logo de Data Afrique Hub"
+          class="mx-4 w-14 h-14 object-cover md:block md:w-20 md:h-20"
+        />
+
+        <ul class="hidden md:flex justify-between space-x-4 md:mr-3">
+          <li><a href="/index.html">Accueil </a></li>
+          <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+          <li><a href="./evenement.html">Evènements</a></li>
+          <li>
+            <a href="./partenaire.html" class="bg-white text-primary py-2 px-4"
+              >Devenir partenaire</a
+            >
+          </li>
+          <li>
+            <a
+              href="./src/partenaire.html"
+              class="bg-white text-primary py-2 px-4"
+              >Rejoignez-nous !</a
+            >
+          </li>
+        </ul>
+
+        <div class="md:hidden mx-4">
+          <button id="hamberger" class="text-3xl">
+            <i class="bx bx-menu" style="color: #fffafa"></i>
+          </button>
+        </div>
+      </nav>
+      <!--MOBILE MENU-->
+      <div
+        id="menu-container"
+        class="hidden ease-linear duration-150 h-screen w-full fixed top-0 bg-black bg-opacity-50 z-50 overflow-hidden"
+      >
+        <div class="float-end h-full w-[273px] bg-white"></div>
+      </div>
+    </header>
+    <main>
+      <!-- <button id="shareButton" class="bg-green-600">SHARE</button> -->
+      <section id="upcoming">
+        <div>
+          <div
+            class="flex flex-wrap justify-evenly items-center bg-green-500 w-full min-h-[300px]"
+          >
+            <div class="w-60 h-60">
+              <img
+                src="./assets/evenement_DataAfriqueHub.jpg"
+                alt=""
+                class="rounded-md object-cover"
+              />
+            </div>
+            <div class="flex flex-col justify-center items-start">
+              <span
+                id="status"
+                class="p-2 text-white bg-primary bg-opacity-25 text-center"
+                >A Venir</span
+              >
+              <p class="text-white py-3">
+                <span id="time">7H:00 PM - 8H:00</span>,<span id="day"
+                  >7 fevrier</span
+                >
+              </p>
+              <h1 id="theme" class="uppercase text-2xl w-64">
+                Initiation a Python pour la Data Science
+              </h1>
+              <div class="flex items-center">
+                <button class="p-3 bg-primary mr-6">Inscrivez-vous</button>
+                <ul class="flex space-x-3">
+                  <li class="bg-primary p-3"><span>8 jours</span></li>
+                  <li class="bg-primary p-3"><span>8 heures</span></li>
+                  <li class="bg-primary p-3"><span>8 min</span></li>
+                  <li class="bg-primary p-3"><span>8 seconde</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="py-8 flex justify-evenly items-center w-full h-auto">
+            <div class="w-2/3">
+              <h2 class="text-green-500 py-9">A propos</h2>
+              <p id="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                ultricies dignissim leo, nec rutrum diam sodales non. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Nulla id interdum metus. Integer
+                ullamcorper in tortor eu malesuada. In rhoncus euismod
+                ullamcorper. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Proin tincidunt dolor et massa lobortis, eu efficitur
+                libero gravida. Morbi semper felis quis diam ultrices fringilla.
+                Nullam mattis maximus augue nec ultrices. Curabitur vulputate
+                metus ac posuere auctor. Nullam sem justo, posuere vel magna
+                posuere, blandit pretium turpis. In pellentesque porttitor diam.
+                Maecenas tincidunt egestas ipsum id viverra. Nulla ut turpis
+                pretium, vestibulum purus at, suscipit velit.
+              </p>
+            </div>
+            <div>
+              <div
+                class="border border-white rounded-md p-5 space-y-3 flex flex-col"
+              >
+                <div>Live in 1 day February 27, 7:00 PM, CET</div>
+                <div>En ligne</div>
+                <div>Organisé par <span>Data Afrique Hub</span></div>
+                <div>
+                  <button class="bg-green-500 p-3 w-full">S'inscrire</button>
+                </div>
+                <div>
+                  <button class="bg-green-500 p-3 w-full">
+                    Ajouter à votre calendrier
+                  </button>
+                </div>
+                <div class="flex items-center">
+                  <span>Partager :</span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-full min-h-[200px]">
+            <h2 class="text-green-500 text-center py-9">Intervenants</h2>
+            <div class="mx-auto flex flex-wrap space-x-10">
+              <div
+                class="flex flex-col space-y-4 p-2 justify-center items-center border border-white rounded-md"
+              >
+                <img
+                  src="./assets/business-man-banner-concept-with-copy-space_23-2149601461.jpg"
+                  alt=""
+                  class="w-32 h-32 object-cover rounded-full"
+                />
+                <small>SOSSOUKPE AMOS</small>
+                <small>Modérateur</small>
+              </div>
+              <div
+                class="flex flex-col space-y-4 p-2 justify-center items-center border border-white rounded-md"
+              >
+                <img
+                  src="./assets/business-man-banner-concept-with-copy-space_23-2149601461.jpg"
+                  alt=""
+                  class="w-32 h-32 object-cover rounded-full"
+                />
+                <small>SOSSOUKPE AMOS</small>
+                <small>Modérateur</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="others" class="mt-9">
+        <div class="flex flex-col">
+          <h2 class="text-green-400 text-center py-9">Autres Evènements</h2>
+          <div class="mx-auto flex flex-wrap space-x-5">
+            <div
+              class="border border-green-500 rounded-tl-xl rounded-br-xl relative w-64"
+            >
+              <img
+                src="./assets/evenement_DataAfriqueHub.jpg"
+                alt=""
+                class="w-full h-60 object-cover rounded-tl-xl"
+              />
+              <span class="absolute top-0 right-0 bg-primary p-3 text-white"
+                >PASSE</span
+              >
+              <p class="p-2">Date : 0 - 12 - 2004 <span></span></p>
+              <p class="p-2">
+                Thème : Initiation a Python pour la Data Science<span></span>
+              </p>
+            </div>
+            <div
+              class="border border-green-500 rounded-tl-xl rounded-br-xl relative w-64"
+            >
+              <img
+                src="./assets/evenement_DataAfriqueHub.jpg"
+                alt=""
+                class="w-full h-60 object-cover rounded-tl-xl"
+              />
+              <span class="absolute top-0 right-0 bg-primary p-3 text-white"
+                >A VENIR</span
+              >
+              <p class="p-2">Date : 0 - 12 - 2004 <span></span></p>
+              <p class="p-2">
+                Thème : Initiation a Python pour la Data Science<span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

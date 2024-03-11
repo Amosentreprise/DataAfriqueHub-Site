@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Poppins:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.separator{
+    @apply w-28 h-[2px] mx-auto bg-green-500 my-2;
+}
+.disable-scroll {
+   @apply overflow-hidden;
+  }
+
+  /* .fixedElment {
+    @apply fixed top-0 left-0 w-full z-50;
+  }
+  .header{
+    @apply bg-white z-50 text-primary 
+  } */
