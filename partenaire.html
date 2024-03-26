@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Devenez partenaire de Data Afrique Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="./assets/logo_DataAfriqueHub.jpg" />
     <meta
       name="description"
       content="Data Afrique Hub - La communauté passionnée qui se consacre à libérer le potentiel de la data science en Afique."
@@ -15,35 +16,49 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHVYEY58T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EGHVYEY58T');
+    </script>
   </head>
-  <body class="bg-primary min-h-screen w-full font-poppins text-white relative">
-    <header class="bg-primary w-full overflow-hidden border-b border-white">
+  <body class="bg-gradient-to-r from-gray-950 from-0% via-indigo-950 via-45% to-gray-950 to-90% min-h-screen w-full font-poppins text-white relative">
+    <header class=" w-full overflow-hidden border-b border-white">
       <nav
         id="nav-bar"
         class="max-w-7xl mx-auto font-poppins py-1 flex items-center justify-between"
       >
+      <a href="/index.html">
         <img
           src="./assets/logo_DataAfriqueHub.png"
           alt="Logo de Data Afrique Hub"
           class="mx-4 w-14 h-14 object-cover md:block md:w-20 md:h-20"
         />
+      </a>
 
-        <ul class="hidden md:flex justify-between space-x-4 md:mr-3">
-          <li><a href="/index.html">Accueil </a></li>
+        <ul class="hidden md:flex justify-between space-x-4 md:mr-3 items-center">
+          <li><a href="/index.html" >Accueil </a></li>
           <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
           <li><a href="./evenement.html">Evènements</a></li>
           <li>
-            <a href="./partenaire.html" class="bg-white text-primary py-2 px-4"
+            <a href="./partenaire.html" class="bg-gradient-to-r from-red-700 to-orange-500 rounded-md text-white hover:font-bold py-2 px-4"
               >Devenir partenaire</a
             >
           </li>
           <li>
-            <a
-              href="./src/partenaire.html"
-              class="bg-white text-primary py-2 px-4"
-              >Rejoignez-nous !</a
-            >
+            <a href="https://bit.ly/3uPHt25" target="_blank">
+            <button
+    
+              class=" bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+              ><span class="flex w-full bg-gray-900 text-white rounded p-1">Rejoignez-nous !</span></button>
           </li>
+         
+        </a>
+       <!-- <li><button id="buttonMode" class="text-2xl"><i id="mode" class='bx bxs-moon' style='color:#ffffff'></i></button></li>-->
         </ul>
 
         <div class="md:hidden mx-4">
@@ -57,7 +72,27 @@
         id="menu-container"
         class="hidden ease-linear duration-150 h-screen w-full fixed top-0 bg-black bg-opacity-50 z-50 overflow-hidden"
       >
-        <div class="float-end h-full w-[273px] bg-white"></div>
+        <div class="float-end h-full w-[273px] bg-primary">
+          <ul class="w-full flex flex-col space-y-2 text-white p-3 ">
+            <li><a href="/index.html"  >Accueil </a></li>
+            <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+            <li><a href="./evenement.html">Evènements</a></li>
+            <li>
+              <a href="./partenaire.html" class="block bg-gradient-to-r from-red-700 to-orange-500 text-center rounded-md text-white hover:font-bold py-2 px-4 w-full"
+                >Devenir partenaire</a
+              >
+            </li>
+            <li>
+              <a href="https://bit.ly/3uPHt25" target="_blank">
+              <button
+      
+                class="block w-full bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+                ><span class="flex w-full bg-gray-900 text-white rounded p-1 text-center">Rejoignez-nous !</span></button>
+            </li>
+          </a>
+          </ul>
+
+        </div>
       </div>
     </header>
     <main>
@@ -69,19 +104,8 @@
             </h1>
             <div class="separator"></div>
             <p class="md:text-justify">
-              <strong class="text-2xl text-green-500">Data Afrique Hub </strong
-              >vous offre l'opportunité passionnante de devenir notre partenaire
-              stratégique dans l'aventure de l'innovation en matière de données.
-              En tant que partenaire, vous collaborerez avec nous pour façonner
-              l'avenir du secteur de l'apprentissage automatique et des données
-              en Afrique. Ensemble, nous pouvons catalyser la croissance
-              technologique, offrir des formations de pointe et propulser la
-              carrière de professionnels du secteur. Rejoignez-nous dans notre
-              engagement envers l'excellence, l'innovation et la construction
-              d'une communauté dynamique dans le domaine des données. Ensemble,
-              nous pouvons accomplir des avancées significatives et créer un
-              impact durable. Faites partie de l'histoire de Data Afrique Hub en
-              devenant notre partenaire aujourd'hui
+              <strong class="text-2xl bg-gradient-to-r from-red-600 to-orange-500 inline-block text-transparent bg-clip-text">Data Afrique Hub </strong
+              > est une communauté d’apprentissage unique qui permet aux partenaires d’avoir une large gamme d'avantages. Vous désirez certainement contribuer à la transformation du continent africain. C’est ce pourquoi nous luttons également, par la data science.
             </p>
           </div>
           <div class="py-8 mt-20">
@@ -89,45 +113,43 @@
               Pourquoi devenir partenaire de Data Afrique Hub ?
             </h2>
             <div class="separator"></div>
-            <div class="flex flex-wrap mt-8 space-x-8">
+            <div class="flex flex-wrap justify-center items-center mt-8 gap-3">
               <div
                 class="mx-auto flex md:flex-1 flex-col justify-center items-center my-4"
               >
                 <span class="text-3xl">
-                  <i class="bx bxs-star" style="color: green"></i
+                  <i class="bx bxs-star" style="color: #f59e0b"></i
                 ></span>
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis volutpat est velit egestas.
+                <h2>Développez votre impact</h2>
+                <p class="">
+                  ●	Nous mettons en avant nos membres à travers des événements, des publications en ligne et des partenariats médiatiques.
                 </p>
+                <p class="">●	Sur notre site internet, une section spéciale est dédiée pour mettre en valeur les réalisations et les profils de nos membres.</p>
               </div>
               <div
                 class="mx-auto md:flex-1 flex flex-col justify-center items-center my-4"
               >
                 <span class="text-3xl">
-                  <i class="bx bxs-star" style="color: green"></i
+                  <i class="bx bxs-star" style="color: #f59e0b"></i
                 ></span>
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis volutpat est velit egestas.
+                <h2>Développez vos compétences et votre expertise</h2>
+                <p class="">
+                  ●	Vous accédez à des formations hors pair en data science dispensées par des références incontestables.
+          
                 </p>
+                <p class="">●	Vous actualisez votre niveau par les dernières technologies et tendances du marché.</p>
               </div>
               <div
                 class="mx-auto md:flex-1 flex flex-col justify-center items-center my-4"
               >
-                <span class="text-3xl">
-                  <i class="bx bxs-star" style="color: green"></i
+                <span class="text-3xl ">
+                  <i class="bx bxs-star" style="color: #f59e0b"></i
                 ></span>
-                <h2>Lorem ipsum dolor.</h2>
-                <p class="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Facilisis volutpat est velit egestas.
+                <h2>Soutenez une cause noble</h2>
+                <p class="">
+                  ●	La construction d'un lendemain meilleur pour l'Afrique grâce à la data science passera par vous.
                 </p>
+                <p class="">●	Vous serez un acteur majeur dans la résolution des défis du continent africain.</p>
               </div>
             </div>
           </div>
@@ -136,24 +158,22 @@
       <section class="partenaire-form">
         <div class="bg-primary flex justify-center items-center p-8 my-10">
           <div
-            class="max-w-[900px] min-h-[500px] p-5 my-11 bg-primary border-2 border-white rounded-xl relative flex justify-evenly items-center"
+            class="max-w-[900px] min-h-[500px] p-5 my-11  bg-primary md:border-2 md:border-white rounded-xl relative flex justify-evenly "
           >
             <div class="w-full md:w-1/3 hidden md:block">
-              <h2 class="inline-block border-b-2 border-green-500 mb-4">
+              <h2 class="inline-block">
                 Comment devenir partenaire de Data Afrique Hub ?
               </h2>
-              <p class="text-justify">
-                Data Afrique Hub est un hub d'innovation dédié à la data science
-                en Afrique. Notre mission est de démocratiser l'accès à la data
-                science sur le continent. Nous proposons des formations,
-                encourageons la collaboration sur des projets concrets, et
-                organisons des évènements dynamiques
+              <div class="w-32 h-1 bg-gradient-to-r from-red-700 to-orange-500 my-2"></div>
+              <p class="">
+                Devenir partenaire de Data Afrique Hub est un investissement prometteur qui vous permettra
+                 de contribuer au changement  du continent par la data science. 
               </p>
             </div>
             <div
-              class="w-full shadow md:shadow-md md:w-auto md:z-40 md:bg-primary md:border md:border-white md:rounded-lg h-full relative mx-auto p-3 md:-right-[90px]"
+              class="w-full shadow md:shadow-md md:w-auto md:z-40 md:bg-[#0b0b2c] md:border md:border-[#424262] md:rounded-lg h-full relative mx-auto p-3 md:-right-[90px]"
             >
-              <form>
+              <form class=""  >
                 <h2 class="text-center">Devenez Partenaire</h2>
                 <div class="separator"></div>
                 <div>
@@ -163,13 +183,15 @@
                       <input
                         type="text"
                         placeholder="Nom de famille"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                        id="nom"
+                        />
                       <input
                         type="text"
                         placeholder="Prénom"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                        id="prenom"
+                        />
                     </div>
                   </div>
                   <div class="flex flex-col">
@@ -178,13 +200,15 @@
                       <input
                         type="email"
                         placeholder="Adresse mail"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                      id="email"
+                        />
                       <input
                         type="tel"
                         placeholder="Numero de télephone"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                      id="tel"
+                        />
                     </div>
                   </div>
                   <div class="flex flex-col">
@@ -193,30 +217,32 @@
                       <input
                         type="text"
                         placeholder="Nom d'entreprise"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                        id="entreprise"
+                        />
                       <input
                         type="text"
                         placeholder="Secteur d'activité"
-                        class="rounded-md border-2 border-green-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
-                      />
+                        class="rounded-md border-2 border-orange-500 p-2 outline-none bg-transparent placeholder:text-white placeholder:font-normal"
+                      id="secteur"
+                        />
                     </div>
                   </div>
                   <div>
                     <label for="">Type de partenariat recherché</label>
                     <textarea
                       name=""
-                      id=""
-                      class="rounded-md mt-1 px-2 w-full resize-none outline-none border-2 border-green-500 bg-transparent"
+                      id="partenariat"
+                      class="rounded-md mt-1 px-2 w-full resize-none outline-none border-2 border-orange-500 bg-transparent"
+                      
+                    placeholder="Expliquez-nous simplement ce que vous attendez du partenariat"
                     ></textarea>
                   </div>
                   <div class="flex">
                     <button
                       type="submit"
-                      class="mx-auto border-2 border-green-500 text-center p-2 rounded-md"
-                      value="Expliquez-nous simplement ce que vous attendez du partenariat que nous
-
-                    pourrions nouer ensemble"
+                      class="mx-auto border-2 border-orange-500 text-center px-4 py-2 rounded-md hover:bg-orange-500"
+                    
                     >
                       Envoyer
                     </button>
@@ -228,7 +254,7 @@
         </div>
       </section>
     </main>
-    <footer class="w-full flex bg-primary p-5">
+    <footer class="w-full flex  p-5">
       <div class="mx-auto flex flex-col">
         <div class="flex justify-evenly items-center flex-wrap">
           <div class="md:flex-1">
@@ -241,40 +267,122 @@
               <span>Data Afrique Hub</span>
             </div>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor
-              at risus vive
+              Ensemble, nous formons, innovons et transformons l'Afrique par la data.
             </div>
           </div>
-          <div class="md:flex-1"></div>
+          <div class="md:flex-1">
+            <ul>
+              <li><a href="/index.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Accueil</a></li>
+              <li><a href="./apropos.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Qui sommes-nous ?</a> </li>
+              <li><a href="./evenement.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Evènements</a></li>
+              <li><a href="./partenaire.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Devenir partenaire</a></li>
+              <li><a href="https://bit.ly/3uPHt25" target="_blank" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text"  >Rejoignez-nous</a></li>
+            </ul>
+          </div>
           <div class="md:flex-1">
             <div>
               <h2>S'abonner au newsletter</h2>
-              <form>
+              <form id="subscribe">
                 <input
                   type="email"
                   name=""
-                  id=""
+                  id="emailSubscribe"
                   placeholder="Entrez votre adresse email"
                   class="bg-white text-gray-600 placeholder:text-black p-3 outline-none"
                 />
                 <button
+                 
                   type="submit"
-                  class="p-3 bg-green-500 text-center text-white"
+                  class="p-3 bg-gradient-to-r from-red-700 to-orange-500  text-center text-white"
                 >
                   Envoyer
                 </button>
               </form>
             </div>
-            <div>
+            <div class="flex justify-center items-center flex-wrap space-x-2 mt-2">
               <h2>Suivez nous</h2>
+              <ul class="flex space-x-2 flex-wrap">
+                <li><a href="https://www.facebook.com/profile.php?id=61555667883593" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-facebook' style='color:#2b2525'  ></i></a></li>
+                <li><a href="https://www.youtube.com/@dataafriquehub" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-youtube' style='color:#2b2525'></i></a></li>
+                <li><a href="https://www.linkedin.com/company/dataafrique-hub/" class="w-8 h-8 rounded-full bg-white flex justify-center items-center" ><i class='bx bxl-linkedin' style='color:#2b2525'></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
         <hr class="w-full h-1 bg-white my-2" />
-        <div></div>
+        <div>
+          <p class="date"></p>
+        </div>
       </div>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./src/main.js"></script>
+    <script>
+      //recuperer les donnée pour envoyer au service mail
+     const form =  document.querySelector("form");
+     form.addEventListener("submit",(e)=>{
+      e.preventDefault();
+
+      (function(){
+     
+     emailjs.init({
+        publicKey: "jFJLeMdTOae84wqKi",
+      });
+    })();
+
+    
+    var params = {
+      nom:document.getElementById("nom").value,
+      prenom:document.getElementById("prenom").value,
+      entrepriseName:document.getElementById("entreprise").value,
+      secteur:document.getElementById("secteur").value,
+      phone:document.getElementById("tel").value,
+      email:document.getElementById("email").value,
+      partenariat:document.getElementById("partenariat").value,
+    }
+   console.log(params);
+    emailjs.send( "service_cspytrn" , "template_t3gwyki", params )
+
+    .then(()=>{
+      Swal.fire({
+      title: "Merci !",
+      text: "Nous vous contacterons dans quelques minutes",
+      icon: "success"
+});
+    })
+
+     console.log(params)
+
+     })
+     const subscribe =  document.getElementById("subscribe");
+     //recuperer le mail
+     subscribe.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      (function(){
+     
+      emailjs.init({
+        publicKey: "jFJLeMdTOae84wqKi",
+      });
+      })();
+       var params = {
+      email:document.getElementById("emailSubscribe").value,
+      
+    }
+   console.log(params);
+   emailjs.send("service_cspytrn","template_votx2gs", params)
+   .then(()=>{
+      Swal.fire({
+      title: "Merci !",
+      text: "Mail enregistré",
+      icon: "success"
+});
+    })
+
+     })
+
+    </script>
   </body>
 </html>

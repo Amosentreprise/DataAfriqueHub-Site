@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta property="og:image" content="./assets/logo_DataAfriqueHub.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À Propos de Data Afrique Hub</title>
     <meta
@@ -14,35 +15,49 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHVYEY58T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGHVYEY58T');
+</script>
   </head>
   <body class="bg-primary min-h-screen w-full font-poppins text-white relative">
-    <header class="bg-primary w-full overflow-hidden border-b border-white">
+    <header class=" w-full overflow-hidden border-b border-white">
       <nav
         id="nav-bar"
         class="max-w-7xl mx-auto font-poppins py-1 flex items-center justify-between"
       >
+      <a href="./index.html">
         <img
           src="./assets/logo_DataAfriqueHub.png"
           alt="Logo de Data Afrique Hub"
           class="mx-4 w-14 h-14 object-cover md:block md:w-20 md:h-20"
+          
         />
+      </a>
 
-        <ul class="hidden md:flex justify-between space-x-4 md:mr-3">
-          <li><a href="/index.html">Accueil </a></li>
-          <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+        <ul class="hidden md:flex justify-between space-x-4 md:mr-3 items-center">
+          <li ><a href="/index.html" >Accueil </a> </li>
+          <li class="relative"><a href="./apropos.html">Qui sommes-nous ?</a> <span class="flex absolute  h-1 w-full bg-gradient-to-r from-red-700 to-orange-500"></span></li>
           <li><a href="./evenement.html">Evènements</a></li>
           <li>
-            <a href="./partenaire.html" class="bg-white text-primary py-2 px-4"
+            <a href="./partenaire.html" class="bg-gradient-to-r from-red-700 to-orange-500 rounded-md text-white hover:font-bold py-2 px-4"
               >Devenir partenaire</a
             >
           </li>
           <li>
-            <a
-              href="./src/partenaire.html"
-              class="bg-white text-primary py-2 px-4"
-              >Rejoignez-nous !</a
-            >
+            <a href="https://bit.ly/3uPHt25" target="_blank">
+            <button
+    
+              class=" bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+              ><span class="flex w-full bg-gray-900 text-white rounded p-1">Rejoignez-nous !</span></button>
           </li>
+        </a>
+       <!-- <li><button id="buttonMode" class="text-2xl"><i id="mode" class='bx bxs-moon' style='color:#ffffff'></i></button></li>-->
         </ul>
 
         <div class="md:hidden mx-4">
@@ -56,28 +71,48 @@
         id="menu-container"
         class="hidden ease-linear duration-150 h-screen w-full fixed top-0 bg-black bg-opacity-50 z-50 overflow-hidden"
       >
-        <div class="float-end h-full w-[273px] bg-white"></div>
+        <div class="float-end h-full w-[273px] bg-primary">
+          <ul class="w-full flex flex-col space-y-2 text-white p-3 ">
+            <li><a href="/index.html" >Accueil </a></li>
+            <li><a href="./apropos.html" class="bg-gradient-to-r from-red-600 to-orange-500 inline-block text-transparent bg-clip-text" >Qui sommes-nous ?</a></li>
+            <li><a href="./evenement.html">Evènements</a></li>
+            <li>
+              <a href="./partenaire.html" class="block bg-gradient-to-r from-red-700 to-orange-500 text-center rounded-md text-white hover:font-bold py-2 px-4 w-full"
+                >Devenir partenaire</a
+              >
+            </li>
+            <li>
+              <a href="https://bit.ly/3uPHt25" target="_blank">
+              <button
+      
+                class="block w-full bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+                ><span class="flex w-full bg-gray-900 text-white rounded p-1 text-center">Rejoignez-nous !</span></button>
+            </li>
+          </a>
+          </ul>
+
+        </div>
       </div>
     </header>
-    <main>
-      <section class="apropos">
+    <main >
+      <section class="apropos p-2">
         <div class="space-y-10">
           <div class="bg-primary flex justify-center items-center p-8 my-10">
             <div
               class="w-[800px] min-h-[400px] p-5 my-11 bg-primary border-2 border-white rounded-xl relative flex justify-evenly items-center"
             >
-              <div class="w-full md:w-1/3">
-                <h1 class="inline-block border-b-2 border-green-500 mb-4">
-                  Qui sommes nous ?
-                </h1>
-                <p class="text-justify">
-                  Data Afrique Hub est un hub d'innovation dédié à la data
-                  science en Afrique. Notre mission est de démocratiser l'accès
-                  à la data science sur le continent. Nous proposons des
-                  formations, encourageons la collaboration sur des projets
-                  concrets, et organisons des évènements dynamiques
-                </p>
-              </div>
+            <div class="w-full md:w-2/3">
+              <h2 class="inline-block">
+                Qui sommes nous ?
+              </h2>
+              <div class="h-1 w-40 bg-gradient-to-r from-red-700 to-orange-500 my-2"></div>
+              <p class="">
+                Data Afrique Hub, bien plus qu’une plateforme de formation est un mouvement panafricain réservé à la démocratisation de l'accès à la data science et à la transformation de l'Afrique par la puissance des données. Ayant vu le jour suite à plusieurs réflexions sur l’accès limité aux formations de qualité en data science, 
+                Data Afrique Hub est un espace ouvert et accessible à tous niveaux confondus.
+              </p>
+           
+              
+            </div>
               <div class="hidden md:block w-80 h-full relative -right-32">
                 <img
                   src="./assets/apropos.png"
@@ -90,42 +125,48 @@
           <div class="w-full flex">
             <div class="max-w-[800px] p-5 mx-auto">
               <h2>Nos objectifs</h2>
-              <div class="w-32 h-[2px] bg-green-500 my-2"></div>
-              <p class="md:text-justify">
-                Phasellus arcu odio, congue sit amet dictum ut, malesuada at ex.
-                Nulla tortor lacus, rhoncus vel lectus at, scelerisque commodo
-                diam. Pellentesque scelerisque magna sit amet iaculis rutrum.
-                Integer eu aliquet nibh. Morbi nisl justo, lacinia non vulputate
-                sit amet, molestie quis nisl. Duis commodo risus sit amet metus
-                gravida, ut auctor augue dictum. Morbi efficitur rhoncus
-                elementum. Quisque hendrerit justo eu metus porttitor
-                ullamcorper. Maecenas lacus orci, rhoncus in lobortis nec,
-                scelerisque sed erat. Nulla sit amet blandit est.
+              <div class="w-32 h-1 bg-gradient-to-r from-red-700 to-orange-500 my-2"></div>
+              <p class="">
+                Au Data Afrique Hub, nous avons une vision d’avenir : <strong class="bg-gradient-to-r from-red-600 to-orange-500 inline-block text-transparent bg-clip-text"> transformer l'Afrique par la data science.</strong>
+                Pour matérialiser cette vision, nous nous sommes fixés des objectifs clairs et mesurables :
+                <ol class="leading-8">
+                  <li>1. Former des milliers, voire un million de data scientists africains sur les prochaines années;</li>
+                  <li>2. Stimuler l'innovation et la collaboration;</li>
+                  <li>3. Transformer l'Afrique par la data science.</li>
+                </ol>
+
+      
               </p>
+              <p class="pt-4">Nous croyons que la data science est un outil de révolution pour le développement de l'Afrique. Par l’atteinte de nos objectifs, nous contribuerons à bâtir un lendemain meilleur 
+                pour le continent, un avenir où la data science est au service du progrès et de la prospérité de tous.</p>
             </div>
           </div>
           <div class="w-full flex">
             <div class="max-w-[800px] p-5 mx-auto">
               <h2>Notre mission</h2>
-              <div class="w-32 h-[2px] bg-green-500 my-2"></div>
-              <p class="md:text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                ultricies dignissim leo, nec rutrum diam sodales non. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra,
-                per inceptos himenaeos. Nulla id interdum metus. Integer
-                ullamcorper in tortor eu malesuada. In rhoncus euismod
-                ullamcorper. Interdum et malesuada fames ac ante ipsum primis in
-                faucibus. Proin tincidunt dolor et massa lobortis, eu efficitur
-                libero gravida. Morbi semper felis quis diam ultrices fringilla.
-                Nullam mattis maximus augue nec ultrices. Curabitur vulputate
-                metus ac posuere auctor. Nullam sem justo, posuere vel magna
-                posuere, blandit pretium turpis. In pellentesque porttitor diam.
-                Maecenas tincidunt egestas ipsum id viverra. Nulla ut turpis
-                pretium, vestibulum purus at, suscipit velit
+              <div class="w-32 h-1 bg-gradient-to-r from-red-700 to-orange-500 my-2"></div>
+              <p class="">
+                Data Afrique Hub a pour mission de démystifier la data science et de l’employer pour l’essor de l’Afrique. Nous sommes conscients de tout le potentiel de l’intelligence artificielle et de la science des données. Nous croyons que ce sont des outils puissants pour le développement de l'Afrique. 
+                Il est de notre responsabilité de promouvoir la data science sur notre Continent qui regorge de talents exceptionnels. En effet, elle peut permettre de :
+              <ol class="leading-6">
+                <li>1. Résoudre des problèmes concrets tels que l'accès à l'eau potable, à l'éducation, à la santé et à l'énergie.</li>
+                <li>2. Stimuler l'innovation et la création de nouvelles entreprises.</li>
+                <li>3. Améliorer la prise de décision par les gouvernements et les organisations.</li>
+                <li>4. Promouvoir une croissance économique inclusive et durable.</li>
+              </ol>                
               </p>
             </div>
           </div>
-          <div></div>
+          <div class="py-6 flex w-full">
+            <div class="bg-gradient-to-r from-gray-950 from-0% via-indigo-950 via-45% to-gray-950 to-90%  mx-auto flex max-w-[800px] border border-white shadow-md rounded-md min-h-36 ">
+              <ul class="m-auto flex py-6 space-x-4 flex-wrap justify-center items-center px-5 text-2xl">
+                <li class="flex justify-center"><span class="flex flex-col items-center justify-center"><span class="num flex items-center" data-val="200" >0 </span>  <span>membres</span></span></li>
+                <li class="flex justify-center"><span class="flex flex-col items-center justify-center"><span class="num flex items-center" data-val="40">0 </span> <span>certifiés</span></span> </li>
+                <li class="flex justify-center"><span class="flex flex-col items-center justify-center"><span class="num flex items-center" data-val="3">0 </span> <span>webinaires</span></span></li>
+              </ul>
+
+            </div>
+          </div>
         </div>
       </section>
       <section class="partenaire relative">
@@ -144,14 +185,14 @@
             l'innovation en matière de données chez Data Afrique Hub
           </p>
           <a href="./partenaire.html"
-            ><button class="text-sm md:text-xl bg-green-600 p-1 text-white">
+            ><button class="text-sm md:text-xl bg-gradient-to-r from-red-700 to-orange-500  p-1 text-white">
               Devenez notre Partenaire
             </button></a
           >
         </div>
       </section>
     </main>
-    <footer class="w-full flex bg-primary p-5">
+    <footer class="w-full flex  p-5">
       <div class="mx-auto flex flex-col">
         <div class="flex justify-evenly items-center flex-wrap">
           <div class="md:flex-1">
@@ -164,40 +205,85 @@
               <span>Data Afrique Hub</span>
             </div>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.Tortor
-              at risus vive
+              Ensemble, nous formons, innovons et transformons l'Afrique par la data.
             </div>
           </div>
-          <div class="md:flex-1"></div>
+          <div class="md:flex-1">
+            <ul>
+              <li><a href="/index.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Accueil</a></li>
+              <li><a href="./apropos.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Qui sommes-nous ?</a> </li>
+              <li><a href="./evenement.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Evènements</a></li>
+              <li><a href="./partenaire.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Devenir partenaire</a></li>
+              <li><a href="https://bit.ly/3uPHt25" target="_blank" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text"  >Rejoignez-nous</a></li>
+            </ul>
+          </div>
           <div class="md:flex-1">
             <div>
               <h2>S'abonner au newsletter</h2>
-              <form>
+              <form id="subscribe">
                 <input
                   type="email"
                   name=""
-                  id=""
+                  id="emailSubscribe"
                   placeholder="Entrez votre adresse email"
                   class="bg-white text-gray-600 placeholder:text-black p-3 outline-none"
                 />
                 <button
+                 
                   type="submit"
-                  class="p-3 bg-green-500 text-center text-white"
+                  class="p-3 bg-gradient-to-r from-red-700 to-orange-500  text-center text-white"
                 >
                   Envoyer
                 </button>
               </form>
             </div>
-            <div>
+            <div class="flex justify-center items-center flex-wrap space-x-2 mt-2">
               <h2>Suivez nous</h2>
+              <ul class="flex space-x-2 flex-wrap">
+                <li><a href="https://www.facebook.com/profile.php?id=61555667883593" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-facebook' style='color:#2b2525'  ></i></a></li>
+                <li><a href="https://www.youtube.com/@dataafriquehub" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-youtube' style='color:#2b2525'></i></a></li>
+                <li><a href="https://www.linkedin.com/company/dataafrique-hub/" class="w-8 h-8 rounded-full bg-white flex justify-center items-center" ><i class='bx bxl-linkedin' style='color:#2b2525'></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
         <hr class="w-full h-1 bg-white my-2" />
-        <div></div>
+        <div>
+          <p class="date"></p>
+        </div>
       </div>
     </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./src/main.js"></script>
+    <script>
+        const subscribe =  document.getElementById("subscribe");
+     //recuperer le mail
+     subscribe.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      (function(){
+     
+      emailjs.init({
+        publicKey: "jFJLeMdTOae84wqKi",
+      });
+      })();
+       var params = {
+      email:document.getElementById("emailSubscribe").value,
+      
+    }
+   console.log(params);
+   emailjs.send("service_cspytrn","template_votx2gs", params)
+   .then(()=>{
+      Swal.fire({
+      title: "Merci !",
+      text: "Mail enregistré",
+      icon: "success"
+});
+    })
+
+     })
+    </script>
   </body>
 </html>

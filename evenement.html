@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les Evènements de Data Afrique Hub</title>
+    <meta property="og:image" content="./assets/logo_DataAfriqueHub.jpg" />
     <meta
       name="description"
       content="Data Afrique Hub - La communauté passionnée qui se consacre à libérer le potentiel de la data science en Afique."
@@ -14,35 +15,48 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGHVYEY58T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EGHVYEY58T');
+</script>
   </head>
-  <body class="bg-primary min-h-screen w-full font-poppins text-white relative">
-    <header class="bg-primary w-full overflow-hidden border-b border-white">
+  <body class="bg-gradient-to-r from-gray-950 from-0% via-indigo-950 via-45% to-gray-950 to-90% min-h-screen w-full font-poppins text-white relative">
+    <header class=" w-full overflow-hidden border-b border-white">
       <nav
         id="nav-bar"
         class="max-w-7xl mx-auto font-poppins py-1 flex items-center justify-between"
       >
+      <a href="./index.html">
         <img
           src="./assets/logo_DataAfriqueHub.png"
           alt="Logo de Data Afrique Hub"
           class="mx-4 w-14 h-14 object-cover md:block md:w-20 md:h-20"
         />
+      </a>
 
-        <ul class="hidden md:flex justify-between space-x-4 md:mr-3">
-          <li><a href="/index.html">Accueil </a></li>
-          <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
-          <li><a href="./evenement.html">Evènements</a></li>
+        <ul class="hidden md:flex justify-between space-x-4 md:mr-3 items-center">
+          <li ><a href="/index.html" >Accueil </a> </li>
+          <li ><a href="./apropos.html">Qui sommes-nous ?</a> </li>
+          <li class="relative"><a href="./evenement.html">Evènements</a> <span class="flex absolute  h-1 w-full bg-gradient-to-r from-red-700 to-orange-500"></span></li>
           <li>
-            <a href="./partenaire.html" class="bg-white text-primary py-2 px-4"
+            <a href="./partenaire.html" class="bg-gradient-to-r from-red-700 to-orange-500 rounded-md text-white hover:font-bold py-2 px-4"
               >Devenir partenaire</a
             >
           </li>
           <li>
-            <a
-              href="./src/partenaire.html"
-              class="bg-white text-primary py-2 px-4"
-              >Rejoignez-nous !</a
-            >
+            <a  href="https://bit.ly/3uPHt25" target="_blank">
+            <button
+    
+              class=" bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+              ><span class="flex w-full bg-gray-900 text-white rounded p-1">Rejoignez-nous !</span></button>
           </li>
+        </a>
+        <!-- <li><button id="buttonMode" class="text-2xl"><i id="mode" class='bx bxs-moon' style='color:#ffffff'></i></button></li>-->
         </ul>
 
         <div class="md:hidden mx-4">
@@ -56,161 +70,136 @@
         id="menu-container"
         class="hidden ease-linear duration-150 h-screen w-full fixed top-0 bg-black bg-opacity-50 z-50 overflow-hidden"
       >
-        <div class="float-end h-full w-[273px] bg-white"></div>
+        <div class="float-end h-full w-[273px] bg-primary">
+          <ul class="w-full flex flex-col space-y-2 text-white p-3 ">
+            <li><a href="/index.html"  >Accueil </a></li>
+            <li><a href="./apropos.html">Qui sommes-nous ?</a></li>
+            <li><a href="./evenement.html" class="bg-gradient-to-r from-red-600 to-orange-500 inline-block text-transparent bg-clip-text" >Evènements</a></li>
+            <li>
+              <a href="./partenaire.html" class="block bg-gradient-to-r from-red-700 to-orange-500 text-center rounded-md text-white hover:font-bold py-2 px-4 w-full"
+                >Devenir partenaire</a
+              >
+            </li>
+            <li>
+              <a href="https://bit.ly/3uPHt25" target="_blank">
+              <button
+      
+                class="block w-full bg-gradient-to-r from-red-700 to-orange-500  text-white font-semibold rounded p-1 hover:font-bold"
+                ><span class="flex w-full bg-gray-900 text-white rounded p-1 text-center">Rejoignez-nous !</span></button>
+            </li>
+
+
+          </a>
+          <!-- <li><button id="buttonMode" class="text-2xl"><i id="mode" class='bx bxs-moon' style='color:#ffffff'></i></button></li>-->
+          
+          </ul>
+
+        </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <!-- <button id="shareButton" class="bg-green-600">SHARE</button> -->
       <section id="upcoming">
-        <div>
-          <div
-            class="flex flex-wrap justify-evenly items-center bg-green-500 w-full min-h-[300px]"
-          >
-            <div class="w-60 h-60">
-              <img
-                src="./assets/evenement_DataAfriqueHub.jpg"
-                alt=""
-                class="rounded-md object-cover"
-              />
-            </div>
-            <div class="flex flex-col justify-center items-start">
-              <span
-                id="status"
-                class="p-2 text-white bg-primary bg-opacity-25 text-center"
-                >A Venir</span
-              >
-              <p class="text-white py-3">
-                <span id="time">7H:00 PM - 8H:00</span>,<span id="day"
-                  >7 fevrier</span
-                >
-              </p>
-              <h1 id="theme" class="uppercase text-2xl w-64">
-                Initiation a Python pour la Data Science
-              </h1>
-              <div class="flex items-center">
-                <button class="p-3 bg-primary mr-6">Inscrivez-vous</button>
-                <ul class="flex space-x-3">
-                  <li class="bg-primary p-3"><span>8 jours</span></li>
-                  <li class="bg-primary p-3"><span>8 heures</span></li>
-                  <li class="bg-primary p-3"><span>8 min</span></li>
-                  <li class="bg-primary p-3"><span>8 seconde</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="py-8 flex justify-evenly items-center w-full h-auto">
-            <div class="w-2/3">
-              <h2 class="text-green-500 py-9">A propos</h2>
-              <p id="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                ultricies dignissim leo, nec rutrum diam sodales non. Class
-                aptent taciti sociosqu ad litora torquent per conubia nostra,
-                per inceptos himenaeos. Nulla id interdum metus. Integer
-                ullamcorper in tortor eu malesuada. In rhoncus euismod
-                ullamcorper. Interdum et malesuada fames ac ante ipsum primis in
-                faucibus. Proin tincidunt dolor et massa lobortis, eu efficitur
-                libero gravida. Morbi semper felis quis diam ultrices fringilla.
-                Nullam mattis maximus augue nec ultrices. Curabitur vulputate
-                metus ac posuere auctor. Nullam sem justo, posuere vel magna
-                posuere, blandit pretium turpis. In pellentesque porttitor diam.
-                Maecenas tincidunt egestas ipsum id viverra. Nulla ut turpis
-                pretium, vestibulum purus at, suscipit velit.
-              </p>
-            </div>
-            <div>
-              <div
-                class="border border-white rounded-md p-5 space-y-3 flex flex-col"
-              >
-                <div>Live in 1 day February 27, 7:00 PM, CET</div>
-                <div>En ligne</div>
-                <div>Organisé par <span>Data Afrique Hub</span></div>
-                <div>
-                  <button class="bg-green-500 p-3 w-full">S'inscrire</button>
-                </div>
-                <div>
-                  <button class="bg-green-500 p-3 w-full">
-                    Ajouter à votre calendrier
-                  </button>
-                </div>
-                <div class="flex items-center">
-                  <span>Partager :</span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col w-full min-h-[200px]">
-            <h2 class="text-green-500 text-center py-9">Intervenants</h2>
-            <div class="mx-auto flex flex-wrap space-x-10">
-              <div
-                class="flex flex-col space-y-4 p-2 justify-center items-center border border-white rounded-md"
-              >
-                <img
-                  src="./assets/business-man-banner-concept-with-copy-space_23-2149601461.jpg"
-                  alt=""
-                  class="w-32 h-32 object-cover rounded-full"
-                />
-                <small>SOSSOUKPE AMOS</small>
-                <small>Modérateur</small>
-              </div>
-              <div
-                class="flex flex-col space-y-4 p-2 justify-center items-center border border-white rounded-md"
-              >
-                <img
-                  src="./assets/business-man-banner-concept-with-copy-space_23-2149601461.jpg"
-                  alt=""
-                  class="w-32 h-32 object-cover rounded-full"
-                />
-                <small>SOSSOUKPE AMOS</small>
-                <small>Modérateur</small>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </section>
       <section id="others" class="mt-9">
-        <div class="flex flex-col">
-          <h2 class="text-green-400 text-center py-9">Autres Evènements</h2>
-          <div class="mx-auto flex flex-wrap space-x-5">
-            <div
-              class="border border-green-500 rounded-tl-xl rounded-br-xl relative w-64"
-            >
+        
+      </section>
+    </main>
+    <footer class="w-full flex  p-5">
+      <div class="mx-auto flex flex-col">
+        <div class="flex justify-evenly items-center flex-wrap">
+          <div class="md:flex-1">
+            <div class="flex space-x-2 items-center">
               <img
-                src="./assets/evenement_DataAfriqueHub.jpg"
+                src="./assets/logo_DataAfriqueHub.png"
                 alt=""
-                class="w-full h-60 object-cover rounded-tl-xl"
+                class="w-10 h-10 object-cover"
               />
-              <span class="absolute top-0 right-0 bg-primary p-3 text-white"
-                >PASSE</span
-              >
-              <p class="p-2">Date : 0 - 12 - 2004 <span></span></p>
-              <p class="p-2">
-                Thème : Initiation a Python pour la Data Science<span></span>
-              </p>
+              <span>Data Afrique Hub</span>
             </div>
-            <div
-              class="border border-green-500 rounded-tl-xl rounded-br-xl relative w-64"
-            >
-              <img
-                src="./assets/evenement_DataAfriqueHub.jpg"
-                alt=""
-                class="w-full h-60 object-cover rounded-tl-xl"
-              />
-              <span class="absolute top-0 right-0 bg-primary p-3 text-white"
-                >A VENIR</span
-              >
-              <p class="p-2">Date : 0 - 12 - 2004 <span></span></p>
-              <p class="p-2">
-                Thème : Initiation a Python pour la Data Science<span></span>
-              </p>
+            <div>
+              Ensemble, nous formons, innovons et transformons l'Afrique par la data.
+            </div>
+          </div>
+          <div class="md:flex-1">
+            <ul>
+              <li><a href="/index.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Accueil</a></li>
+              <li><a href="./apropos.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Qui sommes-nous ?</a> </li>
+              <li><a href="./evenement.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Evènements</a></li>
+              <li><a href="./partenaire.html" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text">Devenir partenaire</a></li>
+              <li><a href="https://bit.ly/3uPHt25" target="_blank" class=" text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-500 hover:inline-block hover:text-transparent bg-clip-text"  >Rejoignez-nous</a></li>
+            </ul>
+          </div>
+          <div class="md:flex-1">
+            <div>
+              <h2>S'abonner au newsletter</h2>
+              <form id="subscribe">
+                <input
+                  type="email"
+                  name=""
+                  id="emailSubscribe"
+                  placeholder="Entrez votre adresse email"
+                  class="bg-white text-gray-600 placeholder:text-black p-3 outline-none"
+                />
+                <button
+                 
+                  type="submit"
+                  class="p-3 bg-gradient-to-r from-red-700 to-orange-500  text-center text-white"
+                >
+                  Envoyer
+                </button>
+              </form>
+            </div>
+            <div class="flex justify-center items-center flex-wrap space-x-2 mt-2">
+              <h2>Suivez nous</h2>
+              <ul class="flex space-x-2 flex-wrap">
+                <li><a href="https://www.facebook.com/profile.php?id=61555667883593" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-facebook' style='color:#2b2525'  ></i></a></li>
+                <li><a href="https://www.youtube.com/@dataafriquehub" class="w-8 h-8 rounded-full bg-white flex justify-center items-center"><i class='bx bxl-youtube' style='color:#2b2525'></i></a></li>
+                <li><a href="https://www.linkedin.com/company/dataafrique-hub/" class="w-8 h-8 rounded-full bg-white flex justify-center items-center" ><i class='bx bxl-linkedin' style='color:#2b2525'></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <hr class="w-full h-1 bg-white my-2" />
+        <div>
+          <p class="date"></p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="./src/main.js"></script>
+    <script src="./src/fetchData.js"></script>
+    <script>
+        const subscribe =  document.getElementById("subscribe");
+     //recuperer le mail
+     subscribe.addEventListener("submit", (e)=>{
+      e.preventDefault();
+      (function(){
+     
+      emailjs.init({
+        publicKey: "jFJLeMdTOae84wqKi",
+      });
+      })();
+       var params = {
+      email:document.getElementById("emailSubscribe").value,
+      
+    }
+   console.log(params);
+   emailjs.send("service_cspytrn","template_votx2gs", params)
+   .then(()=>{
+      Swal.fire({
+      title: "Merci !",
+      text: "Mail enregistré",
+      icon: "success"
+});
+    })
+
+     })
+    </script>
   </body>
 </html>

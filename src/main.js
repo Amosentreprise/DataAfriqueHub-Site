@@ -3,6 +3,11 @@ const menu = document.getElementById("menu")
 const containner = document.getElementById("menu-container")
 
 
+
+
+
+
+
 // const navBar = document.getElementById("nav-bar");
 
 // // Sélectionnez la hauteur du header et du hero
@@ -37,24 +42,40 @@ containner.addEventListener(("click"), ()=>{
   document.body.classList.remove("disable-scroll");
     containner.classList.add("hidden")
 })
+//Compter down 
+document.addEventListener('DOMContentLoaded', () => {
+  const valuedisplays = document.querySelectorAll(".num");
+  let interval = 5000;
 
+  valuedisplays.forEach((valuedisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valuedisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let compter = setInterval(() => {
+      startValue += 1;
+      valuedisplay.innerHTML = `<span class="bg-gradient-to-r from-red-600 to-orange-500 inline-block text-transparent bg-clip-text text-4xl ">+</span>${startValue}`;
 
-// const shareButton = document.getElementById('shareButton');
+      if (startValue == endValue) {
+        clearInterval(compter);
+      }
+    }, duration);
+  });
+});
 
-// if (navigator.share) {
-//   shareButton.addEventListener('click', () => {
-//     navigator.share({
-//       title: 'Titre de l\'événement',
-//       text: 'Description de l\'événement',
-//       url: 'https://www.example.com/evenement-a-venir',
-//     })
-//       .then(() => console.log('Partage réussi'))
-//       .catch((error) => console.error('Erreur lors du partage :', error));
-//   });
-// } else {
-//   // Gérer le cas où l'API de partage n'est pas prise en charge
-//   shareButton.style.display = 'none';
-// }
+//copyright
 
+const date = document.querySelector(".date");
+date.innerHTML = `Copyright ${new Date().getFullYear()} Data Afrique Hub, Tous droits réservés`
+
+//mode nuit/light
+// const mode = document.getElementById("mode");
+// const button = document.getElementById("buttonMode");
+// button.addEventListener("click", ()=>{
+//   let valueAtribute = mode.getAttribute("class");
+  
+//   valueAtribute == "bx bx-sun" ? mode.setAttribute("class", "bx bxs-moon" ) : mode.setAttribute("class", "bx bx-sun" ) 
+ 
+   
+// })
 
 

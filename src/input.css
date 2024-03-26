@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .separator{
-    @apply w-28 h-[2px] mx-auto bg-green-500 my-2;
+    @apply w-28 h-[2px] mx-auto bg-gradient-to-r from-red-700 to-orange-500 my-2;
 }
 .disable-scroll {
    @apply overflow-hidden;
