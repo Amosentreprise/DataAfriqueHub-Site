@@ -76,6 +76,6 @@ date.innerHTML = `Copyright ${new Date().getFullYear()} Data Afrique Hub, Tous d
 //   valueAtribute == "bx bx-sun" ? mode.setAttribute("class", "bx bxs-moon" ) : mode.setAttribute("class", "bx bx-sun" ) 
  
    
-// })
+// }) 
 
 
